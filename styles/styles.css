@@ -8,7 +8,7 @@ main {
 
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 0px;
 
 }
 
@@ -21,7 +21,7 @@ Each anchor tag will have padding of 20px*/
 nav a {
     color: white;
     display: block;
-    padding:  20px;
+    padding:  0px;
 }
 
 /*This CSS rule references the <h1> (heading 1) element as the selected 
