@@ -21,7 +21,7 @@ Each anchor tag will have padding of 20px*/
 nav a {
     color: white;
     display: block;
-    padding:  10px;
+    padding:  20px;
 }
 
 /*This CSS rule references the <h1> (heading 1) element as the selected 
@@ -29,7 +29,7 @@ element and applies the following declaration:
 The foreground, font color is set to darkblue.*/
 
 h1 {
-    color : steelblue
+    color : darkblue
 }
 
 
@@ -43,7 +43,7 @@ A box shadow around the image border with zero offset and depth of 30px in gray*
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 
