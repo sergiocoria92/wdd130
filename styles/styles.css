@@ -44,8 +44,8 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0, 0 30px gray;
+    padding: 0px;
+    box-shadow: 0 0 30px gray;
 
 }
 
@@ -61,7 +61,7 @@ aside {
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0,0,0,0.2); /*1*/
-    padding: 1rem;
+    padding: 0rem;
     background-color: #eee;
     color: #333;
     text-align: center;
