@@ -2,6 +2,9 @@
 declarations.
 The background color will be the color "darkblue", which is a valid, named color.
 Padding, or area between the content and border is set to 10 pixels for readability*/
+main {
+    max-width: 840px;
+}
 
 nav {
     background-color: darkblue;
@@ -18,7 +21,7 @@ Each anchor tag will have padding of 20px*/
 nav a {
     color: white;
     display: block;
-    padding:  20px;
+    padding:  10px;
 }
 
 /*This CSS rule references the <h1> (heading 1) element as the selected 
@@ -26,7 +29,7 @@ element and applies the following declaration:
 The foreground, font color is set to darkblue.*/
 
 h1 {
-    color : darkblue
+    color : steelblue
 }
 
 
@@ -37,10 +40,10 @@ A border shortcut that names the width, type of border, and color of the border.
 Padding between the image and the border.
 A box shadow around the image border with zero offset and depth of 30px in gray*/
 
-img {
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 
@@ -51,8 +54,29 @@ and applies the following declaration:
 Padding between the paragraph content and the border is set to 10 pixels*/
 
 p {
-    padding: 10px;
+    padding: 0px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,0.2); /*1*/
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+
 }
 
 
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 
+}
