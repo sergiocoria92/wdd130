@@ -8,7 +8,7 @@ main {
 
 nav {
     background-color: darkblue;
-    padding: 0px;
+    padding: 10px;
 
 }
 
@@ -21,7 +21,7 @@ Each anchor tag will have padding of 20px*/
 nav a {
     color: white;
     display: block;
-    padding:  0px;
+    padding:  20px;
 }
 
 /*This CSS rule references the <h1> (heading 1) element as the selected 
@@ -44,7 +44,7 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
-    padding: 0px;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
 
 }
@@ -54,7 +54,7 @@ and applies the following declaration:
 Padding between the paragraph content and the border is set to 10 pixels*/
 
 p {
-    padding: 0px;
+    padding: 10px;
 }
 
 aside {
