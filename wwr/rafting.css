@@ -2,7 +2,6 @@ h2,h3 {
     font-family: 'Bungee Spice', cursive;
 }
 
-/* Aplica la fuente PT Serif a los encabezados h2 y h3 */
 p {
     font-family: 'PT Serif', serif;
 }
@@ -10,7 +9,7 @@ p {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Hace que el hero ocupe toda la pantalla */
+    height: 100vh;
     background-image: url("images/rafting111.jpg");
     background-size: cover;
     background-position: center;
@@ -22,66 +21,64 @@ p {
 
 .hero-title {
     position: absolute;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Para alinear exactamente en el centro */
-    width: 80%; /* Ancho del contenedor será el 80% del ancho del div hero */
-    max-width: 900px; /* Limita el ancho máximo del contenedor */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 80%;
+    max-width: 900px;
 }
 
 
 .hero-title h1 {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo translúcido blanco */
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     font-size: 4em;
-    color: #fff; /* Texto blanco para mejor contraste */
+    color: #fff;
     font-family: 'Bungee Spice', cursive;
     margin: 0;
-    border-radius: 5px; /* Bordes redondeados para la línea */
+    border-radius: 5px; 
 }
 
 .text-box {
     position: absolute;
     right: 25%;
     top: 50%;
-    width: 35%; /* Ajustamos el tamaño del cuadro para que tenga espacio suficiente */
-    background-color: rgba(62, 235, 114, 0.235); /* Fondo translúcido */
+    width: 35%; 
+    background-color: rgba(62, 235, 114, 0.235); 
     padding: 20px;
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
-    display: flex; /* Usamos flexbox */
-    flex-direction: column; /* Los elementos dentro del cuadro estarán en columna */
-    justify-content: flex-start; /* Alineamos los elementos al inicio */
-    align-items: center; /* Alineamos todo horizontalmente al centro */
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
     text-align: center;
-    height: auto; /* Permitimos que el cuadro crezca según el contenido */
+    height: auto; 
 }
 
-/* Estilo para la imagen dentro del cuadro de texto */
 .smile-img {
-    width: 100%; /* La imagen ocupará el 100% del ancho disponible */
-    max-width: 150px; /* Limita el tamaño máximo de la imagen */
+    width: 100%;
+    max-width: 150px; 
     height: auto;
     border-radius: 10px;
-    margin-bottom: 15px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 15px;
 }
 
 h1 {
-    color: #fff; /* Texto blanco para contraste */
+    color: #fff; 
     font-family: 'Bungee Spice', cursive;
-    font-size: 4em; /* Tamaño grande */
+    font-size: 4em;
     margin: 0;
     padding: 0;
 
 }
 
 
-/* Estilo del texto dentro de .text-box */
 .text-box p {
     font-size: 1.2rem;
-    margin: 0; /* Eliminamos el margen para que el texto esté alineado */
+    margin: 0;
     padding: 0;
 }
 
