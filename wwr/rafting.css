@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #3eeb72; /* Color primario */
+    --secondary-color: rgba(62, 235, 114, 0.235); /* Fondo con transparencia */
+    --font-family-main: 'Bungee Spice', cursive;
+    --font-family-secondary: 'PT Serif', serif;
+}
+
 h3 {
     font-family: 'Bungee Spice', cursive;
 }
@@ -9,7 +16,7 @@ p,h2 {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Asegura que la sección cubra toda la altura de la pantalla */
     background-image: url("images/rafting111.jpg");
     background-size: cover;
     background-position: center;
@@ -19,14 +26,17 @@ p,h2 {
     text-align: center;
 }
 
+
 .hero-title {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
     max-width: 900px;
+    text-align: center;
 }
+
 
 
 .hero-title h1 {
@@ -34,7 +44,7 @@ p,h2 {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 20px;
     font-size: 4em;
-    color: #fff;
+    color: #FFF;
     font-family: 'Bungee Spice', cursive;
     margin: 0;
     border-radius: 5px; 
@@ -90,4 +100,14 @@ footer .sociallinks img {
     width: 30px;
     height: auto;
     margin: 0 10px;
+}
+
+body { 
+    background-color: #9b9b9b37; /* Puedes cambiar esto al color de tu preferencia */ 
+    margin: 0; font-family: 'PT Serif', serif; 
+    font-weight: 100; /* Thin 100 */
+}
+
+footer .sociallinks a {
+    text-decoration: none; /* Elimina el subrayado */
 }
