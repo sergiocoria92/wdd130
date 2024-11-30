@@ -13,6 +13,37 @@ body {
     min-height: 100vh; /* Asegura que el body ocupe al menos la altura de la ventana */
 }
 
+header {
+    margin: 1rem auto; 
+    display: grid; /* Using Grid Layout */
+    grid-template-columns: auto 1fr; /* Define two columns: one for the logo, another for the nav */
+    align-items: center; /* Vertically center items in the header */
+    padding: 5px;
+
+}
+
+.logo-box img {
+    width: 100px; /* Define the width of the logo */
+    
+    
+}
+
+nav {
+    display: flex; /* Using Flexbox for horizontal layout of links */
+    justify-content: center; /* Align items to the left (optional) */
+    gap: 20px; /* Space between the links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #09168e; /* Color of links */
+    font-family: 'PT Serif', serif;
+}
+
+nav a:hover {
+    color: #3c5a14; /* Change color on hover */
+}
+
 main {
     width: 100%;
     height: auto; /* El contenedor toma toda la altura de la ventana */
@@ -76,7 +107,8 @@ article {
     top: 70%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta el posicionamiento para estar exactamente centrado */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido */
+    background-color: rgba(17, 39, 11, 0.8); /* Fondo translúcido */
+    font-family: 'PT Serif', serif;
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     max-width: 80%; /* Limita el ancho del contenedor */
@@ -86,7 +118,7 @@ article {
 article p {
     font-family: 'PT Serif', serif;
     font-size: 1.2em;
-    color: black; /* Ajusta el color del texto */
+    color: white; /* Ajusta el color del texto */
     width: 60%; /* El texto ocupa el 60% del contenedor */
     margin: 0;
 }
@@ -104,18 +136,117 @@ p{
     font-size: 1em;
 }
 
+section {
+    text-align: center; /* Centra el título */
+    padding: 40px; /* Espaciado alrededor de la sección */
+    background-color: #71b340;
+}
+
+section h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex; /* Usamos flexbox para organizar los elementos de manera horizontal */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.content p { /*texto de history*/
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 45%; /* Limita el ancho de los párrafos */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+.history {
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 45%; /* Limita el ancho de los párrafos */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+
+/*esto es para las 5 fotos*/
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex; /* Utilizamos Flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre las imágenes */
+    padding: 0;
+    list-style: none; /* Elimina los puntos de lista */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en filas si no caben en una sola línea */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+li {
+    width: calc(20% - 20px); /* Cada imagen ocupa el 20% del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    text-align: center;
+}
+
+li figure {
+    margin: 0; /* Elimina el margen por defecto de la etiqueta figure */
+}
+
+li img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* La imagen cubre el espacio sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+figcaption {
+    margin-top: 10px; /* Espacio entre la imagen y el pie de foto */
+    font-family: 'PT Serif', serif;
+    font-size: 1em;
+    color: white;
+}
 
 h2{
     font-family: 'PT Serif', serif;
     font-size: 2em;
 }
 
+footer {
+    display: flex; /* Usamos Flexbox para alinear los elementos */
+    justify-content: flex-end; /* Alineamos los elementos al principio (izquierda) */
+    align-items: center; /* Alineamos los elementos verticalmente en el centro */
+    padding: 20px; /* Añadimos un poco de espacio */
+    background-color: #598B2C; /* Opcional, para darle un fondo al footer */
+}
+
+footer p {
+    margin-right: 20px; /* Espacio entre el texto y los iconos sociales */
+    font-family: 'PT Serif', serif;
+    font-size: 1.1em;
+    color: #fff; /* El color del texto */
+}
 
 footer .sociallinks img {
     width: 30px;
     height: auto;
     margin: 0 10px;
+
+
 }
 footer .sociallinks a {
     text-decoration: none; /* Elimina el subrayado */
+    margin: 0 10px;
+
 }
