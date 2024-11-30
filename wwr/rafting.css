@@ -66,7 +66,7 @@ main {
     object-position: center; /* Asegura que la imagen se centre */
 }
 
-.hero h1 {
+.hero h1 { /*texto titulo*/
     position: absolute; /* Posiciona el título de forma absoluta */
     top: 19%; /* Ajusta la posición vertical del título */
     left: 50%; /* Centra el título horizontalmente */
@@ -77,13 +77,13 @@ main {
     z-index: 2; /* Asegura que el título quede encima del fondo */
 }
 
-.hero:before {
+.hero:before { /*cuadro verde bajo el titulo*/
     content: ""; /* Necesario para crear un pseudo-elemento */
     position: absolute; /* Lo colocamos debajo del título */
-    top: 20%; /* Justo debajo del título */
+    top: 17%; /* Justo debajo del título */
     left: 0;
     width: 100%; /* Cubre todo el ancho de la imagen */
-    height: 25%; /* Ajusta la altura del fondo debajo del título */
+    height: 28%; /* Ajusta la altura del fondo debajo del título */
     background-color: rgba(43, 232, 53, 0.174); /* Fondo negro translúcido */
     z-index: 1; /* Colocamos el fondo por debajo del título */
 }
