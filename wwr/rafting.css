@@ -68,7 +68,7 @@ main {
 
 .hero h1 {
     position: absolute; /* Posiciona el título de forma absoluta */
-    top: 20%; /* Ajusta la posición vertical del título */
+    top: 18%; /* Ajusta la posición vertical del título */
     left: 50%; /* Centra el título horizontalmente */
     transform: translateX(-50%); /* Ajusta el título para que esté perfectamente centrado */
     font-family: 'Bungee Spice', cursive;
