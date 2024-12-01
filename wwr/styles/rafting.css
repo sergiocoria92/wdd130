@@ -42,6 +42,7 @@ nav a {
 
 nav a:hover {
     color: #3c5a14; /* Change color on hover */
+    font-weight: bold;
 }
 
 main {
@@ -198,16 +199,21 @@ li {
     width: calc(20% - 20px); /* Cada imagen ocupa el 20% del ancho del contenedor */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
     text-align: center;
+    height: 250px; /* Fija la altura de los contenedores */
 }
 
 li figure {
     margin: 0; /* Elimina el margen por defecto de la etiqueta figure */
+    height: 100%; /* Asegura que la figura ocupe el 100% de la altura de li */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra las imágenes y texto dentro de la figura */
 }
 
 li img {
     width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* La imagen cubre el espacio sin distorsionarse */
+    height: 100%; /* Hace que las imágenes ocupen toda la altura del contenedor */
+    object-fit: cover; /* Las imágenes se recortan para llenar el contenedor */
     border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -223,7 +229,7 @@ h2{
     font-size: 2em;
 }
 
-footer {
+footer {/*pie de pagina*/
     display: flex; /* Usamos Flexbox para alinear los elementos */
     justify-content: flex-end; /* Alineamos los elementos al principio (izquierda) */
     align-items: center; /* Alineamos los elementos verticalmente en el centro */
