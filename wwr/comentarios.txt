@@ -1,0 +1,27 @@
+main --- es el "contenedor" de la imagen y de history junto con las 5 imagenes
+.hero es el contenedor de la imagen hero y lo de mision
+.hero-image es la imagen
+
+
+.hero-h1 y .hero:before se hicieron para colocar la linea traslucida bajo el titulo
+
+
+h1 es el titulo
+
+articule - ahi va incluido el "cuadro" donde se contiene la imagen 
+y el texto
+articule p - es las caracteristicas del texto 
+
+
+.smile es la foto del vato sonriendo
+
+p-es el texto general
+
+h2 es para history
+
+en header... tal vez tenga problemas despues... porque por alguna razon al 
+agregar margin 1rem logre que estuvieran juntos la imagen y el nav pero se redujo 
+el cuadro donde estaban.... por ahora lo dejare asi, pero si tiene algun problema tendre
+que revisarlo. tambien tal vez voy  a tener que meter los 
+<ul class= "navigation">
+ <li><a .... en en el navegador. ejemplo: https://codepen.io/BYU-Idaho/pen/zYgbaEq
