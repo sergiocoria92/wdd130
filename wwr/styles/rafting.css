@@ -14,36 +14,50 @@ body {
 }
 
 header {
-    margin: 1rem auto; 
-    display: grid; /* Using Grid Layout */
-    grid-template-columns: auto 1fr; /* Define two columns: one for the logo, another for the nav */
-    align-items: center; /* Vertically center items in the header */
-    padding: 5px;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos en el header */
+    align-items: center;
+    padding: 10px;
+    background-color: #002f5c;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.header-content {
+    display: flex; /* Usamos flexbox para alinear logo y nav horizontalmente */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px; /* Espacio entre el logo y el nav */
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-box img {
-    width: 100px; /* Define the width of the logo */
-    
-    
+    width: 100px;
 }
 
 nav {
-    display: flex; /* Using Flexbox for horizontal layout of links */
-    justify-content: center; /* Align items to the left (optional) */
-    gap: 20px; /* Space between the links */
+    display: flex;
+    justify-content: center; /* Centra los enlaces del nav */
+    gap: 20px; /* Espacio entre los enlaces */
 }
 
 nav a {
     text-decoration: none;
-    color: #09168e; /* Color of links */
+    color: white;
     font-family: 'PT Serif', serif;
 }
 
 nav a:hover {
-    color: #3c5a14; /* Change color on hover */
+    color: rgb(161, 205, 19);
     font-weight: bold;
 }
+
 
 main {
     width: 100%;
@@ -85,7 +99,7 @@ main {
     left: 0;
     width: 100%; /* Cubre todo el ancho de la imagen */
     height: 28%; /* Ajusta la altura del fondo debajo del título */
-    background-color: rgba(43, 232, 53, 0.174); /* Fondo negro translúcido */
+    background-color: rgba(0, 47, 92, 0.5); /* Fondo negro translúcido */
     z-index: 1; /* Colocamos el fondo por debajo del título */
 }
 
@@ -108,7 +122,7 @@ article {
     top: 70%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta el posicionamiento para estar exactamente centrado */
-    background-color: rgba(17, 39, 11, 0.8); /* Fondo translúcido */
+    background-color: rgba(0, 47, 92, 0.5); /* Fondo translúcido */
     font-family: 'PT Serif', serif;
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
@@ -140,7 +154,7 @@ p{
 section {
     text-align: center; /* Centra el título */
     padding: 40px; /* Espaciado alrededor de la sección */
-    background-color: #71b340;
+    background-color: #002f5c;
 }
 
 section h2 {
@@ -162,6 +176,7 @@ section h2 {
     line-height: 1.6;
     max-width: 45%; /* Limita el ancho de los párrafos */
     margin: 0; /* Elimina márgenes por defecto */
+    color: white
 }
 
 .history {
@@ -234,7 +249,7 @@ footer {/*pie de pagina*/
     justify-content: flex-end; /* Alineamos los elementos al principio (izquierda) */
     align-items: center; /* Alineamos los elementos verticalmente en el centro */
     padding: 20px; /* Añadimos un poco de espacio */
-    background-color: #598B2C; /* Opcional, para darle un fondo al footer */
+    background-color: #002f5c; /* Opcional, para darle un fondo al footer */
 }
 
 footer p {
