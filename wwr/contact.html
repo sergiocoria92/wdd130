@@ -81,42 +81,49 @@
         </section>
         <div class="form">
             <form>
-              <div class="input-group">
-                <div class="input-container">
-                    <label for="user">User name</label>
-                    <input type="text" id="user" name="user" required>
-                </div>
-                <div class="input-container">
-                    <label for="email">User email address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+              <div class="form">
+                <form>
+                    <div class="input-group">
+                        <div class="input-container">
+                            <label for="user">User name</label>
+                            <input type="text" id="user" name="user" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="email">User email address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+            
+                    <div class="subscribe">
+                        <label for="subscribe-checkbox">
+                            <input type="checkbox" id="subscribe-checkbox" name="subscribe" value="yes">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+            
+                    <div class="radio">
+                        <label for="general-inquiry">
+                            <input type="radio" id="general-inquiry" name="inquiry" value="General Inquiry">
+                            General Inquiry
+                        </label>
+                        <label for="reservation-question">
+                            <input type="radio" id="reservation-question" name="inquiry" value="Reservation Question">
+                            Reservation Question
+                        </label>
+                        <label for="website-suggestion">
+                            <input type="radio" id="website-suggestion" name="inquiry" value="Website Suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+            
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+            
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-          
-              <div class="subscribe">
-                <label>
-                  <input type="checkbox" name="subscribe" value="yes">
-                  Please subscribe me to the monthly newsletter
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="inquiry" value="General Inquiry"> General Inquiry
-                </label>
-                <label>
-                  <input type="radio" name="inquiry" value="Reservation Question"> Reservation Question
-                </label>
-                <label>
-                  <input type="radio" name="inquiry" value="Website Suggestion"> Website Suggestion
-                </label>
-              </div>
-          
-              <div class="message">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-          
-              <button type="submit">Submit</button>
-            </form>
           </div>
     </main> 
     <footer>
