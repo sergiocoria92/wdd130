@@ -117,16 +117,16 @@ h1 {
 article {
     display: flex; /* Usa flexbox para alinear la imagen y el texto horizontalmente */
     justify-content: space-between; /* Da espacio entre el texto y la imagen */
-    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    align-items:flex-start; /* Alinea verticalmente la imagen y el texto */
     position: absolute; /* Lo posicionamos sobre el fondo de la imagen */
     top: 70%; /* Centrado verticalmente */
-    left: 50%; /* Centrado horizontalmente */
+    left: 40%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta el posicionamiento para estar exactamente centrado */
     background-color: rgba(0, 47, 92, 0.5); /* Fondo translúcido */
     font-family: 'PT Serif', serif;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    max-width: 80%; /* Limita el ancho del contenedor */
+    border-radius: 90px; /* Bordes redondeados */
+    max-width: 150%; /* Limita el ancho del contenedor */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
 }
 
@@ -134,21 +134,18 @@ article p {
     font-family: 'PT Serif', serif;
     font-size: 1.2em;
     color: white; /* Ajusta el color del texto */
-    width: 60%; /* El texto ocupa el 60% del contenedor */
+    width: 100%; /* El texto ocupa el 60% del contenedor */
     margin: 0;
 }
 
-.smile {
-    width: 30%; /* La imagen ocupa el 30% del contenedor */
-    height: auto; /* Mantiene la relación de aspecto */
-    border-radius: 50%; /* Hace la imagen circular */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
-}
 
-p{
-    font-family: 'PT Serif', serif;
-    text-align: left;
-    font-size: 1em;
+/* Esto es para colocar el mapa fuera del flujo del artículo */
+.map {
+    position: absolute; /* Lo coloca fuera del flujo normal de la página */
+    top: 55%; /* Ajusta la posición desde la parte superior */
+    right: 5%; /* Puedes cambiar a left: 0 si prefieres en el lado izquierdo */
+    width: 20%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
 }
 
 section {
@@ -156,37 +153,6 @@ section {
     padding: 40px; /* Espaciado alrededor de la sección */
     background-color: #002f5c;
 }
-
-section h2 {
-    font-family: 'PT Serif', serif;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.content {
-    display: flex; /* Usamos flexbox para organizar los elementos de manera horizontal */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-.content p { /*texto de history*/
-    font-family: 'PT Serif', serif;
-    font-size: 1.2em;
-    line-height: 1.6;
-    max-width: 45%; /* Limita el ancho de los párrafos */
-    margin: 0; /* Elimina márgenes por defecto */
-    color: white
-}
-
-.history {
-    font-family: 'PT Serif', serif;
-    font-size: 1.2em;
-    line-height: 1.6;
-    max-width: 45%; /* Limita el ancho de los párrafos */
-    margin: 0; /* Elimina márgenes por defecto */
-}
-
 
 /*esto es para las 5 fotos*/
 
