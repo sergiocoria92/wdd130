@@ -592,3 +592,199 @@ button:hover {
 .image-container img:hover {
     transform: scale(1.05); /* Efecto de zoom suave */
 }
+
+
+
+/***********trips*******************/
+/* Estilos generales para la sección de adventures */
+.adventures {
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+/* Contenedor principal con dos columnas */
+.adventures-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Estilo para la columna izquierda (texto) */
+.left-column {
+    flex: 1;
+    color: #333;
+    padding-right: 20px;
+}
+
+
+.adventures .adventures-content .left-column h1 {
+    font-family: 'PT Serif', serif;
+    position: relative; /* Opcional si margin-left no es suficiente */
+}
+
+
+.left-column p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button:hover {
+    background-color: orange;
+}
+
+/* Estilo para la columna derecha (imagenes en cuadrícula) */
+.right-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    flex: 1;
+}
+
+.small-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Asegura que las imágenes tengan un buen tamaño y se ajusten bien */
+.right-column img {
+    max-width: 100%;
+    height: 200px; /* Controla la altura de las imágenes para que sean uniformes */
+    object-fit: cover; /* Asegura que las imágenes se recorten y ajusten */
+}
+
+
+section {
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+.possibilities-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para las celdas de la tabla */
+.possibilities-table td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #dcdcdc; /* Fondo gris rata */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilo para las imágenes dentro de las celdas */
+.history-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Estilo para el botón */
+.green-button {
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.green-button:hover {
+    background-color: orange;
+}
+
+
+/* Contenedor principal de la sección */
+.adventure-section {
+    padding: 40px;
+    background-color: #f7f7f7;
+}
+
+/* Fila con imagen y texto */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Espacio entre las filas */
+}
+
+/* Imagen grande */
+.large-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Columna de texto */
+.right-side {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Columna de la izquierda (imagen) */
+.left-side {
+    flex: 1;
+    max-width: 50%; /* Limita el tamaño de la imagen */
+}
+
+/* Texto en las filas */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/*imagenes casi del final*/
+
+/* Fila invertida (con el texto a la izquierda y la imagen a la derecha) */
+.row.reversed {
+    flex-direction: row-reverse;
+}
+
+/* Ajustar las filas para que no estén perfectamente alineadas */
+.row:nth-child(1) .right-side {
+    margin-left: 70px; /* Desfase entre el texto y la imagen */
+}
+
+.row.reversed .right-side {
+    margin-right: 20px; /* Desfase entre el texto y la imagen */
+}
