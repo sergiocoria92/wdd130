@@ -61,7 +61,7 @@ nav a:hover {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 47, 92, 1); /* Fondo azul */
+    background-color: white; /* Fondo azul */
 }
 
 /* Esto le da margen al contenido sin modificar el HTML */
@@ -181,7 +181,7 @@ section h2 {
     line-height: 1.6;
     max-width: 45%; /* Limita el ancho de los párrafos */
     margin: 0; /* Elimina márgenes por defecto */
-    color: white
+    color: black
 }
 
 .history {
@@ -204,7 +204,7 @@ section h2 {
     font-family: 'PT Serif', serif;
     font-size: 2em;
     margin-bottom: 20px;
-    color: white
+    color: black
 }
 
 ul {
@@ -242,7 +242,7 @@ figcaption {
     margin-top: 10px; /* Espacio entre la imagen y el pie de foto */
     font-family: 'PT Serif', serif;
     font-size: 1em;
-    color: white;
+    color: black
 }
 
 h2{
@@ -293,11 +293,12 @@ footer .sociallinks a {
 }
 
 /* Estilo para el párrafo dentro de .info */
-.info p {
+.contact p {
     font-family: 'PT Serif', serif;
     font-size: 1.2em;
     margin-top: 0; /* Evita que haya margen extra arriba */
     margin-bottom: 20px; /* Asegura que haya espacio debajo de .info p */
+    color: black;
 }
 
 /* Contenedor de .map */
@@ -337,7 +338,7 @@ main {
 /* Título de la sección Team */
 .team h3 {
     padding: 0;
-    color: white;
+    color: black;
     font-family: 'PT Serif', serif;
     text-align: center;
     font-size: 2em;
@@ -417,4 +418,177 @@ button:hover {
     background-color: #45a049;
 }
 
-/***********************************/
+/*******************home****************/
+
+
+
+.hero h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bungee Spice', cursive;
+    color: white;
+    font-size: 1.5rem;
+    
+    /* Contorno del texto usando text-shadow */
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.5),   /* Sombra inferior derecha */
+        -2px -2px 4px rgba(0, 0, 0, 0.5),  /* Sombra superior izquierda */
+        2px -2px 4px rgba(0, 0, 0, 0.5),   /* Sombra superior derecha */
+        -2px 2px 4px rgba(0, 0, 0, 0.5);   /* Sombra inferior izquierda */
+}
+
+.text1 p {
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 45%; /* Limita el ancho de los párrafos */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: center; /* Centra el texto dentro del párrafo */
+}
+
+
+.invitation h1{
+    font-family: 'PT Serif', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 45%; /* Limita el ancho de los párrafos */
+    margin: 0; /* Elimina márgenes por defecto */
+
+}
+
+/* Estilos específicos para el botón con la clase .trips.button1 */
+.trips.button1 form button {
+    background-color: #4CAF50;      /* Color de fondo negro */
+    color: white;                 /* Color del texto blanco */
+    font-size: 1rem;              /* Tamaño de fuente más pequeño */
+    padding: 8px 16px;            /* Relleno reducido para hacer el botón más pequeño */
+    border: none;                 /* Sin borde */
+    border-radius: 5px;           /* Bordes redondeados */
+    cursor: pointer;             /* Cambia el cursor a mano al pasar por encima */
+    display: inline-block;        /* Para evitar que el botón ocupe todo el ancho */
+    text-align: center;           /* Centra el texto dentro del botón */
+    text-decoration: none;        /* Elimina el subrayado si el botón es un enlace */
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    transition: background-color 0.3s ease; /* Transición suave en hover */
+    width: auto;                  /* El ancho será ajustado automáticamente al contenido */
+}
+
+/* Efecto hover para el botón */
+.trips.button1 form button:hover {
+    background-color: orange;      /* Color de fondo al pasar el ratón (hover) */
+}
+
+
+/* Estilos Generales */
+.offers-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espacio entre las filas */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor Principal para Cada Grupo */
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espacio entre imágenes y texto */
+    padding: 20px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Columna de Imágenes (Vertical) */
+.image-column {
+    display: flex;
+    flex-direction: column; /* Apila las imágenes verticalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    flex: 1; /* Ocupa el espacio necesario */
+}
+
+.image-column img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-column img:hover {
+    transform: scale(1.05); /* Efecto zoom */
+}
+
+.image-column figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Columna de Texto */
+.text-column {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de Contacto */
+.contact-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button:hover {
+    background-color: orange;
+}
+
+.text-column {
+    background-color: red; /* Color de fondo rojo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra negra con transparencia */
+    border-radius: 5px; /* Opcional: bordes ligeramente redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+
+
+/* Fondo gris detrás de las imágenes */
+.image-container {
+    background-color: grey; /* Color de fondo gris claro */
+    padding: 10px; /* Espaciado interno para separar las imágenes del borde */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
+/* Sombras en las imágenes */
+.image-container img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra negra con transparencia */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    transition: transform 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
+}
+
+/* Efecto hover para las imágenes */
+.image-container img:hover {
+    transform: scale(1.05); /* Efecto de zoom suave */
+}
