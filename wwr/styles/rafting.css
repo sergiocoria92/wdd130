@@ -251,6 +251,31 @@ h2{
     font-size: 2em;
 }
 
+.button1 {
+    text-align: center; /* Centra el botón dentro de su contenedor */
+    margin-top: 20px; /* Espacio superior opcional */
+}
+
+
+.green-button {
+    display: inline-block; /* Comportamiento de botón */
+    background-color: #28a745; /* Color verde inicial */
+    color: white; /* Texto blanco */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 12px 24px; /* Espaciado interno */
+    text-decoration: none; /* Quita el subrayado */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia a cursor de mano */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+.green-button:hover {
+    background-color: #ff7300; /* Cambia a naranja al pasar el cursor */
+    color: white; /* Asegura que el texto siga siendo blanco */
+}
+
 footer {/*pie de pagina*/
     display: flex; /* Usamos Flexbox para alinear los elementos */
     justify-content: flex-end; /* Alineamos los elementos al principio (izquierda) */
